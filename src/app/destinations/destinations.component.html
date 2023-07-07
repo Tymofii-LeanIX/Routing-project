@@ -1,0 +1,5 @@
+<mat-list>
+    <mat-list-item *ngFor="let destination of destinations">
+      <a matLine [routerLink]="['/destination/', destination.id]">{{destination.name}}</a>
+    </mat-list-item>
+  </mat-list>
